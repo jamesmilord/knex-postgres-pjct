@@ -70,9 +70,15 @@ root             | Superuser, Create role, Create DB              | {}
 postgres=#
 ```
 
+then you should create a database which you will in your knex setup
+
+```
+CREATE DATABASE <database_name>
+```
+
 then you should be good to go on the docker side :raised_hands:
 
-##creating the server
+## Knex Setup
 
 after genrating the express server
 
