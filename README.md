@@ -1,6 +1,6 @@
-# simple crud api using knex and postgresql
+# Simple crud api using Knex and PostgreSQL
 
-## project setup
+## Project setup
 
 you will need to have knex installed globally
 
@@ -8,16 +8,16 @@ you will need to have knex installed globally
 npm install knex -g
 ```
 
-this package will also be part of your local dependencies
+This package will also be part of your local dependencies
 
 you have the choice of running the db locally on your operating system or within a docker-container
 
-### running postgres
+### Running Postgres
 
-Running localy of the operating system by going to the official site of [Postgresql](https://www.postgresql.org/download/)
+Running locally on the operating system by going to the official site of [Postgresql](https://www.postgresql.org/download/)
 pick operating system and follow prompt. :+1: easy
 
-Running within docker you ll need to perform a few command
+Running within docker you will need to perform a few command
 
 ```
 docker run --name <db_name>  -p 5432:5432 -e POSTGRES_PASSWORD=<password> -d postgres
@@ -54,7 +54,7 @@ CREATE USER new_username;
 ALTER USER new_username SUPERUSER CREATEDB;
 ```
 
-change the username to the name of you machine as you will get a not found role error
+change the username to the name of your machine as you will get a not found role error
 
 to verify
 
@@ -70,19 +70,19 @@ root             | Superuser, Create role, Create DB              | {}
 postgres=#
 ```
 
-then you should create a database which you will in your knex setup
+then you should create a database which you will use in your knex setup
 
 ```
 CREATE DATABASE <database_name>
 ```
 
-then you should be good to go on the docker side :raised_hands:
+then the docker setup should be complete :raised_hands:
 
 ## Knex Setup
 
 after genrating the express server
 
-since we are using knex you ll need to run a few knex command
+since we are using knex you will need to run a few knex command
 
 first one which is
 
